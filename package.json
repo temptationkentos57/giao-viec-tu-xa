@@ -8,13 +8,13 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.10.9",
+    "express": "^4.18.2",  // Updated to latest stable version for security improvements
+    "mongoose": "^6.5.0",  // Updated to avoid deprecation warnings
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0"
+    "dotenv": "^10.0.0"  // Updated for improved features
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.15"  // Updated to latest version
   },
   "license": "MIT",
   "author": "Your Name"
