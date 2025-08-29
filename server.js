@@ -16,6 +16,12 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .then(() => console.log('Kết nối tới MongoDB thành công!'))
   .catch(err => console.log(err));
 
+// Middleware xử lý lỗi
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Đã xảy ra lỗi');
+});
+
 app.listen(port, () => {
   console.log(`Server đang chạy trên cổng: ${port}`);
 });
