@@ -14,7 +14,10 @@ app.use(express.json());
 // Kết nối với MongoDB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Kết nối tới MongoDB thành công!'))
-  .catch(err => console.log(err));
+  .catch(err => {
+    console.error('Lỗi kết nối với MongoDB:', err);
+    process.exit(1); // Dừng ứng dụng nếu không thể kết nối
+  });
 
 // Middleware xử lý lỗi
 app.use((err, req, res, next) => {
