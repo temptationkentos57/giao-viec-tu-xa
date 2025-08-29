@@ -1,6 +1,6 @@
 {
   "name": "giao-viec-tu-xa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ứng dụng web quản lý công việc từ xa",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,6 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Your Name"
 }
