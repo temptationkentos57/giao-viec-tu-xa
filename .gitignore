@@ -1,3 +1,8 @@
+# Thư mục chứa các gói cài đặt Node.js
 node_modules/
+
+# Thư mục được xây dựng và phát hành
 built/
+
+# Tập tin môi trường và cấu hình
 .env
